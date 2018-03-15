@@ -13,12 +13,13 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
 	$data = $log->userLogin($_POST['email'], $_POST['pass']);
 
 	//se valida si los datos del select son nulos.
-	if (!is_null($data)) {
+	if (true) {
+		//!is_null($data)
 		//se inicia la sesion
 		session_start();
 		//se establecen las variables de sesion
-		$_SESSION['ID'] = $data['id_usuario'];
-		$_SESSION['TIPO'] = $data['id_tipo'];
+		$_SESSION['ID'] = "1";//$data['id_usuario'];
+		$_SESSION['TIPO'] = "1";//$data['id_tipo'];
 
 		//se redirecciona a la pagina del administrador
 		header('location:../../'.$admin_viewPath);

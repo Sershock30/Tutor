@@ -85,9 +85,11 @@ if (!isset($_SESSION['ID'])) {
 	<?php
 }else{
 	
-	include $admin_header.$ext;
+	// if (file_exists($admin_header.$ext;)) {
+	// 	include $admin_header.$ext;
+	// }
 
-	?><div class="container"><?php
+	?> <!-- <div class="container"> --><?php
 
 	//contenido del panel
 	if (isset($_GET['page'])) {
@@ -102,8 +104,11 @@ if (!isset($_SESSION['ID'])) {
 		include $admin_Panel.$ext;
 	}
 
-	?></div><?php
-	include $admin_footer.$ext;
+	?><!-- </div> --><?php
+	// if (file_exists($admin_footer.$ext)) {
+	// 	include $admin_footer.$ext;
+	// }
+	
 
 }	
 
