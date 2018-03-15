@@ -1,0 +1,29 @@
+/*Estilos para el header y el footer*/
+
+/*Sticky nav*/
+.navbar-fixed-top + .content {
+  padding-top: 60px;
+}
+
+/*full height footer*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    padding:10px 0px;
+    transition:all 0.3s; 
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}
+
+/*Fin de estilos para el header y el footer*/

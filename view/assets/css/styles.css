@@ -1,0 +1,20 @@
+.nav-item {
+  position:relative;
+}
+
+.nav-item:before {
+  content:"";
+  width:0;
+  position:absolute;
+  left:0;
+  bottom:0;
+  height:0.9px;
+  background:rgba(255,255,255, 0.7);
+  /*transform:translateX(-50%);*/
+  transition:all 0.35s;
+}
+
+.nav-item:hover:before {
+  width:100%;
+}
+
